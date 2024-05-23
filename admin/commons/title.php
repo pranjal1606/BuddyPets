@@ -1,0 +1,1 @@
+<title>Buddy Pets - Admin</title>

@@ -1,0 +1,15 @@
+<?php
+    session_start();
+    ob_start();
+
+    if(isset($_SESSION["user1"])){
+        $user = $_SESSION["user1"];   
+    }
+    else{
+        $_SESSION["msg"] = "<div class='alert alert-danger alert-dismissible'>
+		<button type='button' class='close' data-dismiss='alert'>&times;</button>
+		<strong>Error ! </strong> Please Login First.
+		</div>";
+		header("location:login.php");
+    }
+?>
